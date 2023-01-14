@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+/* Styles for Header section */
+header{
+    background: rgba(255, 144, 14, 0.1);
+    
+}
+.header{
+    
+    
+}
+.title{
+    font-family: 'Poppins', sans-serif;
+    font-size: 35px;
+}
+.nav-section{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 50px;
+}
+.nav-menu{
+    margin-top: 45px;
+}
+.nav-menu a{
+    text-decoration: none;
+    margin: 30px;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.header-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+.header-descriptions{
+    text-align: center;
+}
+.header-content img{
+    width: 1390px;
+    padding-bottom: 30px;
+}
+.header-descriptions h1{
+    font-size: 50px;
+    font-family: 'Poppins', sans-serif;
+    line-height: 20px;
+}
+.header-descriptions p{
+    width: 700px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+}
+.btn-primary{
+    width: 180px;
+    height: 60px;
+    border: none;
+    border-radius: 8px;
+    background: #FF900E;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+}
+
+/* Responsive Header styles for mobile device */
+@media screen and (max-width: 576px) {
+    .nav-section{
+        flex-direction: column;
+    }
+    .nav-menu a{
+        display: flex;
+        justify-content: center;
+        font-size: 15px;
+        margin-top: 0;
+    }
+    .title{
+        font-size: 23px;
+        text-align: center;
+        margin-bottom: 0;
+    }
+    .header-descriptions h1{
+        font-size: 28px;
+    }
+    .header-descriptions p{
+        width: 250px;
+        margin: 10px 10px;
+        font-size: 14px;
+    }
+    .header-content img{
+        width: 300px;
+    }
+}
+
+/* Responsive Header styles for medium device */
+@media screen and (min-width: 576px) and (max-width: 992px) {
+    .nav-section{
+        flex-direction: column;
+    }
+    .nav-menu a{
+        display: flex;
+        justify-content: center;
+        font-size: 18px;
+        margin-top: 0;
+    }
+    .title{
+        font-size: 28px;
+        text-align: center;
+        margin-bottom: 0;
+    }
+    .header-descriptions h1{
+        font-size: 35px;
+    }
+    .header-descriptions p{
+        width: 550px;
+        margin: 20px 10px;
+        font-size: 19px;
+    }
+    .header-content img{
+        width: 700px;
+    }
+}
