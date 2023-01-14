@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 
+
 /* Styles for Header section */
 header{
     background: rgba(255, 144, 14, 0.1);
@@ -120,3 +121,168 @@ header{
         width: 700px;
     }
 }
+
+/* 
+----------------------------
+Header Section Done
+----------------------------
+*/
+
+.features{
+    margin: 50px;
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+.feature-contents h2{
+    font-size: 35px;
+    width: 450px;
+    font-family: 'Work Sans';
+}
+.feature-contents p{
+    font-size: 16px;
+    font-family: 'Work Sans';
+    font-weight: 400;
+    width: 550px;
+}
+.feature-img{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 15px;
+   
+}
+.feature-img img{
+    width: 340px;
+}
+
+/* More Features section */
+.more-features{
+    display: flex;
+    justify-content: space-between;
+    margin: 100px 50px;
+}
+.features-div h2{
+    font-size: 40px;
+    width: 300px;
+}
+.features-div p{
+    font-size: 16px;
+    font-family: 'Work Sans';
+    width: 550px;
+}
+.feature{
+    width: 550px;
+    height: 170px;
+    padding: 10px;
+    box-shadow: 0 4px 30px rgba(0,0,0,0.06);
+}
+.feature h3{
+    font-size: 20px;
+    font-weight: 600;
+    font-family: 'Work Sans';
+}
+.feature p{
+    font-size: 16px;
+    font-family: 'Work Sans';
+}
+.more-features img{
+    width: 700px;
+}
+
+/* Responsive styles for smaller device */
+@media screen and (max-width: 576px) {
+    .feature-img{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .features{
+        flex-direction: column;
+        align-items: center;
+    }
+    .feature-contents{
+        text-align: center;
+    }
+    .feature-contents h2{
+        font-size: 28px;
+    }
+    .feature-contents p{
+        width: 350px;
+        text-align: center;
+        margin: 20px 50px;
+    }
+    .more-features{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+    }
+    .features-div h2{
+        font-size: 30px;
+        width: 250px;
+    }
+    .features-div p{
+        width: 300px;
+    }
+    .feature{
+        width: 300px;
+        height: 170px;
+        
+    }
+    .feature p{
+        font-size: 16px;
+        font-family: 'Work Sans';
+    }
+    .more-features img{
+        width: 310px;
+    }
+}
+
+/* Responsive styles for medium device */
+@media screen and (min-width: 576px) and (max-width: 992px) {
+    .feature-img{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .features{
+        flex-direction: column;
+        align-items: center;
+    }
+    .feature-contents{
+        text-align: center;
+    }
+    .feature-contents h2{
+        font-size: 33px;
+        margin-left: 65px;
+    }
+    .feature-contents p{
+        width: 500px;
+        text-align: center;
+        margin: 20px 50px;
+    }
+    .more-features{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+    }
+    .features-div h2{
+        font-size: 40px;
+        width: 350px;
+    }
+    .features-div p{
+        width: 500px;
+    }
+    .feature{
+        width: 500px;
+        height: 170px;
+        
+    }
+    
+    .more-features img{
+        width: 500px;
+    }
+}
+
+/* 
+-------------------------
+Features Section Done
+-------------------------
+*/
