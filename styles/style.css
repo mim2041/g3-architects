@@ -235,6 +235,20 @@ Header Section Done
         width: 310px;
     }
 }
+.btn-experience{
+    display: flex;
+    justify-content: center;
+}
+
+.btn-secondary{
+    width: 300px;
+    height: 200px;
+    background: #FF900E;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    /* font-family: 'Work Sans'; */
+}
 
 /* Responsive styles for medium device */
 @media screen and (min-width: 576px) and (max-width: 992px) {
@@ -273,9 +287,7 @@ Header Section Done
     .feature{
         width: 500px;
         height: 170px;
-        
     }
-    
     .more-features img{
         width: 500px;
     }
@@ -286,3 +298,159 @@ Header Section Done
 Features Section Done
 -------------------------
 */
+
+/* Some Facts Container styles */
+.facts-container{
+    margin: 100px 50px;
+}
+.facts-titles h3{
+    font-size: 35px;
+    font-family: 'Work Sans';
+    font-weight: 700;
+    line-height: 20px;
+}
+.facts-titles p{
+    font-family: 'Work Sans';
+    width: 500px;
+}
+.facts{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 50px 100px;
+}
+.fact{
+    width: 200px;
+    height: 200px;
+    border: 1px solid #FF900E;
+    text-align: center;
+
+}
+.fact img{
+    width: 45px;
+    margin-top: 30px;
+}
+
+/* Responsive Styles for some facts for mobile device */
+@media screen and (max-width: 576px) {
+    
+    .facts-titles h3{
+        font-size: 28px;
+    }
+    .facts-titles p{
+        width: 300px;
+    }
+    .facts{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 30px;
+        margin: 50px auto;
+    }
+    .fact{
+        width: 200px;
+        height: 200px;
+        margin: auto;
+    }
+    
+}
+
+/* Responsive styles for some facts for medium devices */
+@media screen and (min-width: 576px) and (max-width: 992px) {
+    .facts-container{
+        /* margin: 100px 50px; */
+    }
+    .facts-titles h3{
+        font-size: 35px;
+        font-weight: 600;
+    }
+    .facts-titles p{
+        width: 500px;
+    }
+    .facts{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+        margin: 50px auto;
+    }
+    .fact{
+        width: 300px;
+        height: 270px;
+        margin: auto;
+    }
+    
+}
+
+/* 
+------------------------
+Some Facts Section Done
+------------------------
+*/
+
+.sponsors{
+    margin: 100px 50px;
+}
+.sponsors-titles{
+    text-align: center;
+    font-family: 'Work Sans';
+
+}
+.sponsors-titles h2{
+    font-size: 35px;
+}
+.sponsors-titles p{
+    font-size: 16px;
+    width: 400px;
+    margin: auto;
+}
+.sponsors-div{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    margin: 50px;
+}
+.sponsor img{
+    width: 160px;
+    mix-blend-mode: luminosity;
+}
+
+/* Responsive Styles for Sponsors for small devices */
+@media screen and (max-width: 576px) {
+    .sponsors{
+        margin: 100px 40px;
+    }
+    .sponsors-titles h2{
+        font-size: 28px;
+    }
+    .sponsors-titles p{
+        font-size: 16px;
+        width: 300px;
+    }
+    .sponsors-div{
+        grid-template-columns: repeat(1, 1fr);
+        gap: 30px;
+        margin: 50px;
+    }
+}
+
+/* Responsive Styles for Sponsors for medium devices */
+
+@media screen and (min-width: 576px) and (max-width: 992px) {
+    .sponsors{
+        margin: 100px 50px;
+    }
+    .sponsors-titles h2{
+        font-size: 28px;
+    }
+    .sponsors-titles p{
+        font-size: 16px;
+        width: 400px;
+    }
+    .sponsors-div{
+        grid-template-columns: repeat(1, 1fr);
+        gap: 30px;
+        margin: 50px auto;
+    }
+    .sponsor{
+        margin: auto;
+    }
+}
+
+/* Footer styles */
