@@ -4,11 +4,10 @@
 /* Styles for Header section */
 header{
     background: rgba(255, 144, 14, 0.1);
-    
+  
 }
-.header{
-    
-    
+body{
+ 
 }
 .title{
     font-family: 'Poppins', sans-serif;
@@ -39,8 +38,8 @@ header{
 .header-descriptions{
     text-align: center;
 }
-.header-content img{
-    width: 1390px;
+.header-content-img{
+    /* width: 100vw; */
     padding-bottom: 30px;
 }
 .header-descriptions h1{
@@ -92,6 +91,7 @@ header{
         width: 300px;
     }
     .btn-primary{
+        /* display: none; */
         width: 120px;
         height: 40px;
         border: none;
@@ -225,7 +225,7 @@ Header Section Done
         grid-template-columns: repeat(1, 1fr);
     }
     .features{
-        flex-direction: column-reverse;
+        flex-direction: column;
         align-items: center;
     }
     .feature-contents{
@@ -269,12 +269,13 @@ Header Section Done
 
     .feature-img-div{
         position: relative;
-        margin: auto;
+        left: 5px;
         display: flex;
         gap: 50px;
         flex-direction: column-reverse;
         align-items: center;
         justify-content: center;
+        
     }
     .feature-img-div img{
         width: 300px;
@@ -286,7 +287,7 @@ Header Section Done
         justify-content: center;
         position: relative;
         flex-direction: column-reverse;
-        margin-left: 240px;
+        margin-left: 300px;
         margin-top: 200px;
         
     }
@@ -361,81 +362,6 @@ Features Section Done
 -------------------------
 */
 
-/* About US section styles */
-.about-us-container{
-    display: flex;
-    margin: 10px 50px;
-    justify-content: space-between;
-}
-.section-titles{
-    width: 500px;
-    font-family: 'Work Sans';
-
-}
-.section-titles h1{
-    font-size: 35px;
-    width: 450px;
-}
-.about-us-images{
-    display: flex;
-    gap: 15px;
-}
-.about-us-images img{
-    width: 400px;
-    box-shadow: 0 0 30px 4px rgba(0,0,0,0.1) ;
-    transition: 0.5s ease-in-out;
-}
-.about-us-images img:hover{
-    transform: scale(1.1);
-    transition: all 2s ease 0s; 
-    z-index: 2; 
-}
-
-/* Styles for Mobile device */
-@media screen and (max-width: 576px) {
-    .about-us-container{
-        flex-direction: column;
-        margin: 100px 30px;
-        gap: 30px;
-    }
-    .section-titles{
-        width: 300px;
-        font-family: 'Work Sans';
-    
-    }
-    .about-us-images{
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 15px;
-    }
-    .about-us-images img{
-        width: 300px;
-    }
-}
-/* Styles for Medium device */
-@media screen and (min-width: 576px) and (max-width: 992px) {
-    .about-us-container{
-        margin-top: -190px;
-        flex-direction: column;
-        /* margin: 100px 30px; */
-        justify-content: center;
-        gap: 30px;
-    }
-    .section-titles{
-        width: 500px;
-        /* text-align: center; */
-    }
-    .about-us-images{
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 25px;
-    }
-    .about-us-images img{
-        width: 500px;
-    }
-}
 
 /* Some Facts Container styles */
 .facts-container{
@@ -527,6 +453,82 @@ Features Section Done
 Some Facts Section Done
 ------------------------
 */
+
+/* About US section styles */
+.about-us-container{
+    display: flex;
+    margin: 10px 50px;
+    justify-content: space-between;
+}
+.section-titles{
+    width: 500px;
+    font-family: 'Work Sans';
+
+}
+.section-titles h1{
+    font-size: 35px;
+    width: 450px;
+}
+.about-us-images{
+    display: flex;
+    gap: 15px;
+}
+.about-us-images img{
+    width: 400px;
+    box-shadow: 0 0 30px 4px rgba(0,0,0,0.1) ;
+    transition: 0.5s ease-in-out;
+}
+.about-us-images img:hover{
+    transform: scale(1.1);
+    transition: all 2s ease 0s; 
+    z-index: 2; 
+}
+
+/* Styles for Mobile device */
+@media screen and (max-width: 576px) {
+    .about-us-container{
+        flex-direction: column;
+        margin: 100px 30px;
+        gap: 30px;
+    }
+    .section-titles{
+        width: 300px;
+        font-family: 'Work Sans';
+    
+    }
+    .about-us-images{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+    }
+    .about-us-images img{
+        width: 300px;
+    }
+}
+/* Styles for Medium device */
+@media screen and (min-width: 576px) and (max-width: 992px) {
+    .about-us-container{
+        margin-top: -190px;
+        flex-direction: column;
+        /* margin: 100px 30px; */
+        justify-content: center;
+        gap: 30px;
+    }
+    .section-titles{
+        width: 500px;
+        /* text-align: center; */
+    }
+    .about-us-images{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 25px;
+    }
+    .about-us-images img{
+        width: 500px;
+    }
+}
 
 .sponsors{
     margin: 100px 50px;
