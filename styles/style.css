@@ -218,6 +218,7 @@ Header Section Done
 }
 
 
+
 /* Responsive styles for smaller device */
 @media screen and (max-width: 576px) {
     .feature-img{
@@ -363,7 +364,7 @@ Features Section Done
 /* About US section styles */
 .about-us-container{
     display: flex;
-    margin: 100px 50px;
+    margin: 10px 50px;
     justify-content: space-between;
 }
 .section-titles{
@@ -375,15 +376,19 @@ Features Section Done
     font-size: 35px;
     width: 450px;
 }
-.section-titles p{
-
-}
 .about-us-images{
     display: flex;
     gap: 15px;
 }
 .about-us-images img{
     width: 400px;
+    box-shadow: 0 0 30px 4px rgba(0,0,0,0.1) ;
+    transition: 0.5s ease-in-out;
+}
+.about-us-images img:hover{
+    transform: scale(1.1);
+    transition: all 2s ease 0s; 
+    z-index: 2; 
 }
 
 /* Styles for Mobile device */
@@ -408,7 +413,7 @@ Features Section Done
         width: 300px;
     }
 }
-/* Styles for Mobile device */
+/* Styles for Medium device */
 @media screen and (min-width: 576px) and (max-width: 992px) {
     .about-us-container{
         margin-top: -190px;
@@ -456,7 +461,12 @@ Features Section Done
     height: 200px;
     border: 1px solid #FF900E;
     text-align: center;
-
+    box-shadow: 0 0 20px 2px rgba(0,0,0,0.1);
+    transition: 0.7s;
+}
+.fact:hover{
+    transform: scale(1.2);
+    z-index: 1;
 }
 .fact img{
     width: 45px;
