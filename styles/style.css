@@ -91,6 +91,13 @@ header{
     .header-content img{
         width: 300px;
     }
+    .btn-primary{
+        width: 120px;
+        height: 40px;
+        border: none;
+        border-radius: 8px;
+        font-size: 14px;
+    }
 }
 
 /* Responsive Header styles for medium device */
@@ -185,9 +192,31 @@ Header Section Done
     font-size: 16px;
     font-family: 'Work Sans';
 }
-.more-features img{
+.feature-img-div{
+    position: absolute;
+    right:50px;
+}
+.feature-img-div img{
     width: 700px;
 }
+.btn-experience{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top:-204px;
+    left:-200px;
+}
+
+.btn-secondary{
+    width: 300px;
+    height: 200px;
+    background: #FF900E;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    /* font-family: 'Work Sans'; */
+}
+
 
 /* Responsive styles for smaller device */
 @media screen and (max-width: 576px) {
@@ -195,7 +224,7 @@ Header Section Done
         grid-template-columns: repeat(1, 1fr);
     }
     .features{
-        flex-direction: column;
+        flex-direction: column-reverse;
         align-items: center;
     }
     .feature-contents{
@@ -214,6 +243,7 @@ Header Section Done
         justify-content: center;
         align-items: center;
         gap: 50px;
+        margin: 30px;
     }
     .features-div h2{
         font-size: 30px;
@@ -232,22 +262,42 @@ Header Section Done
         font-family: 'Work Sans';
     }
     .more-features img{
-        width: 310px;
+        width: 300px;
+        margin: auto;
     }
-}
-.btn-experience{
-    display: flex;
-    justify-content: center;
-}
 
-.btn-secondary{
-    width: 300px;
-    height: 200px;
-    background: #FF900E;
-    border: none;
-    border-radius: 8px;
-    color: white;
-    /* font-family: 'Work Sans'; */
+    .feature-img-div{
+        position: relative;
+        margin: auto;
+        display: flex;
+        gap: 50px;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+    }
+    .feature-img-div img{
+        width: 300px;
+        margin-top: -200px;
+        /* margin-right: 50px; */
+        /* margin-left: -90px; */
+    }
+    .btn-experience{
+        justify-content: center;
+        position: relative;
+        flex-direction: column-reverse;
+        margin-left: 240px;
+        margin-top: 200px;
+        
+    }
+    .btn-secondary{
+        width: 150px;
+        height: 100px;
+        background: #FF900E;
+        border: none;
+        border-radius: 8px;
+        color: white;
+        /* font-family: 'Work Sans'; */
+    }
 }
 
 /* Responsive styles for medium device */
@@ -256,7 +306,7 @@ Header Section Done
         grid-template-columns: repeat(2, 1fr);
     }
     .features{
-        flex-direction: column;
+        flex-direction: column-reverse;
         align-items: center;
     }
     .feature-contents{
@@ -280,6 +330,7 @@ Header Section Done
     .features-div h2{
         font-size: 40px;
         width: 350px;
+        
     }
     .features-div p{
         width: 500px;
@@ -291,6 +342,16 @@ Header Section Done
     .more-features img{
         width: 500px;
     }
+    .feature-img-div{
+        position: relative;
+        right:50px;
+    }
+    .btn-experience{
+        
+        top:-204px;
+        left: 100px;
+        /* left:-200px; */
+    }
 }
 
 /* 
@@ -298,6 +359,78 @@ Header Section Done
 Features Section Done
 -------------------------
 */
+
+/* About US section styles */
+.about-us-container{
+    display: flex;
+    margin: 100px 50px;
+    justify-content: space-between;
+}
+.section-titles{
+    width: 500px;
+    font-family: 'Work Sans';
+
+}
+.section-titles h1{
+    font-size: 35px;
+    width: 450px;
+}
+.section-titles p{
+
+}
+.about-us-images{
+    display: flex;
+    gap: 15px;
+}
+.about-us-images img{
+    width: 400px;
+}
+
+/* Styles for Mobile device */
+@media screen and (max-width: 576px) {
+    .about-us-container{
+        flex-direction: column;
+        margin: 100px 30px;
+        gap: 30px;
+    }
+    .section-titles{
+        width: 300px;
+        font-family: 'Work Sans';
+    
+    }
+    .about-us-images{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+    }
+    .about-us-images img{
+        width: 300px;
+    }
+}
+/* Styles for Mobile device */
+@media screen and (min-width: 576px) and (max-width: 992px) {
+    .about-us-container{
+        margin-top: -190px;
+        flex-direction: column;
+        /* margin: 100px 30px; */
+        justify-content: center;
+        gap: 30px;
+    }
+    .section-titles{
+        width: 500px;
+        /* text-align: center; */
+    }
+    .about-us-images{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 25px;
+    }
+    .about-us-images img{
+        width: 500px;
+    }
+}
 
 /* Some Facts Container styles */
 .facts-container{
